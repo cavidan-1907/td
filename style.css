@@ -1,48 +1,79 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 100px 50px;
-    background-color: orange;
+    flex-direction: column;
+    background: bisque;
+    font-display: swap;
+    padding: 100px;
+    font-family: 'Dosis', sans-serif;
+    height: inherit;
+ 
+
 }
-section{
+
+section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 30px;
     width: 30%;
     padding: 50px 10px;
-    background-color: orangered;
+    border-radius: 16px;
+    background-color: rgba(154, 31, 226, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+}
+input{
+    width: 100%;
+    padding:10px 5px;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 10px ;
+}
+ 
+
+#btn {
+    width: 100px;
+    background-color: rgb(46, 46, 225);
+    font-size: 20px;
+    border-radius: 10px;
+    color: wheat;
+    overflow: hidden;
 }
 
-#btn{
-    width: 100px;
-}
-ul{
+ul {
     width: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    text-decoration: line-through;
 }
-li{
+
+li {
     background-color: gray;
     padding: 5px 10px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
-li i{
-    padding: 20px 10px;
-    background-color: rgb(15, 15, 241);
+
+li div i {
+    padding: 5px;
+    color: white;
 }
+
+li div{
+    display: flex;
+    gap: 5px;
+}
+
