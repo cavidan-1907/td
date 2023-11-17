@@ -10,12 +10,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: bisque;
+    background: white;
     font-display: swap;
     padding: 100px;
     font-family: 'Dosis', sans-serif;
     height: inherit;
- 
+    background-image: url(background4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -24,28 +27,35 @@ section {
     flex-direction: column;
     text-align: center;
     gap: 30px;
-    width: 30%;
+    width: 50%;
     padding: 50px 10px;
     border-radius: 16px;
-    background-color: rgba(154, 31, 226, 0.3);
+    background-color: rgba(255, 255, 255, 0.34) ;
     border: 1px solid rgba(255, 255, 255, 0.34);
 }
-input{
+
+input {
     width: 100%;
-    padding:10px 5px;
+    padding: 10px 5px;
     font-size: 18px;
     background-color: transparent;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
- 
+
 
 #btn {
-    width: 100px;
-    background-color: rgb(46, 46, 225);
-    font-size: 20px;
-    border-radius: 10px;
+    width: 30%;
+    background-color: navy;
+    font-size: 15px;
+    border-radius: 4px;
     color: wheat;
+    padding: 10px;
     overflow: hidden;
+    transition: 0.51s;
+}
+#btn:hover{
+    color: aliceblue;
+    background-color: orange;
 }
 
 ul {
@@ -58,8 +68,9 @@ ul {
 }
 
 li {
-    background-color: gray;
+    background-color: white;
     padding: 5px 10px;
+    border-radius: 10px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -69,11 +80,13 @@ li {
 
 li div i {
     padding: 5px;
-    color: white;
+    color: rgb(43, 43, 228);
+    transition: 0.51s;
 }
-
-li div{
+li div i:hover{
+    color: red;
+}
+li div {
     display: flex;
     gap: 5px;
 }
-

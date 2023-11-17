@@ -1,15 +1,13 @@
 let btn = document.getElementById("btn");
 let input = document.getElementById("input");
 
-
-
-
-
-
-
 btn.addEventListener("click", () => {
 
-
+    if (input.value === "")
+    {
+        alert("xahis olunur bir edilecek is elave edin!")
+        return;
+    }
     let li = document.createElement("li")
     li.innerText = input.value;
     ul.append(li)
@@ -20,7 +18,7 @@ btn.addEventListener("click", () => {
     i.className = "bi bi-trash3"
     div.append(i)
     let i2 = document.createElement("i")
-    i2.className = "bi bi-crosshair2"
+    i2.className = "bi bi-pen"
     div.append(i2)
     i.addEventListener("click", () => {
         li.remove()
@@ -30,9 +28,6 @@ btn.addEventListener("click", () => {
     i2.addEventListener("click", () => {
         li.style.textDecoration=line-through;
     })
-
-
-
 })
 
 
@@ -49,6 +44,11 @@ btn.addEventListener("click", () => {
 
 document.addEventListener("keypress", (e) => {
     if (e.key == "Enter") {
+        if (input.value === "")
+        {
+            alert("xahis olunur bir edilecek is elave edin!")
+            return;
+        }
         let li = document.createElement("li")
         li.innerText = input.value;
         ul.append(li)
@@ -59,7 +59,7 @@ document.addEventListener("keypress", (e) => {
         i.className = "bi bi-trash3"
         div.append(i)
         let i2 = document.createElement("i")
-        i2.className = "bi bi-crosshair2"
+        i2.className = "bi bi-pen"
         div.append(i2)
         i.addEventListener("click", () => {
             li.remove()
