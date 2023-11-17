@@ -29,8 +29,8 @@ section {
     gap: 30px;
     width: 50%;
     padding: 50px 10px;
-    border-radius: 16px;
-    background-color: rgba(255, 255, 255, 0.34) ;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.34);
     border: 1px solid rgba(255, 255, 255, 0.34);
 }
 
@@ -45,17 +45,20 @@ input {
 
 #btn {
     width: 30%;
-    background-color: navy;
+    background-color: rgb(14, 14, 237);
     font-size: 15px;
+    border: 1px solid rgb(14, 14, 237) ;
     border-radius: 4px;
     color: wheat;
     padding: 10px;
     overflow: hidden;
     transition: 0.51s;
 }
-#btn:hover{
+
+#btn:hover {
     color: aliceblue;
     background-color: orange;
+    border: 1px solid orange ;
 }
 
 ul {
@@ -79,13 +82,19 @@ li {
 }
 
 li div i {
-    padding: 5px;
-    color: rgb(43, 43, 228);
+    padding: 10px;
+    color:white;
     transition: 0.51s;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(14, 14, 237);
 }
-li div i:hover{
-    color: red;
+
+li div i:hover {
+    color: aliceblue;
+    background-color: orange;
 }
+
 li div {
     display: flex;
     gap: 5px;
