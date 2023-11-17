@@ -33,16 +33,44 @@ section {
     background-color: rgba(255, 255, 255, 0.34);
     border: 1px solid rgba(255, 255, 255, 0.34);
 }
+.icon{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+}
 
-input {
+.icon i{
+    width: 10%;
+    background-color: rgb(14, 14, 237);
+    font-size: 15px;
+    border: 1px solid rgb(14, 14, 237) ;
+    border-radius: 4px;
+    color: wheat;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.51s;
+}
+
+.icon i:hover {
+    color: aliceblue;
+    background-color: orange;
+    border: 1px solid orange ;
+}
+#input {
     width: 100%;
     padding: 10px 5px;
     font-size: 18px;
     background-color: transparent;
     border-radius: 10px;
+    outline: none;
+    background-color: white; border-color: inherit;
 }
 
+#input:focus{
+    border-color: inherit;
 
+}
 #btn {
     width: 30%;
     background-color: rgb(14, 14, 237);
