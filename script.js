@@ -1,15 +1,14 @@
-
 let btn = document.getElementById("btn");
 let input = document.getElementById("input");
-let ul = document.getElementById("ul"); 
+let ul = document.getElementById("ul");
+let srcBtn = document.querySelector("#search");
+let todoArr = [];
 
-
-
-
+let yanlis = "Xahiş olunur bir ediləcək iş əlavə edin!";
 
 btn.addEventListener("click", () => {
     if (input.value.trim() === "") {
-        alert("Xahiş olunur bir ediləcək iş əlavə edin!");
+        showErrorMessage(yanlis);
         return;
     }
 
@@ -29,13 +28,23 @@ btn.addEventListener("click", () => {
     let i2 = document.createElement("i");
     i2.className = "bi bi-pen";
     div.append(i2);
+    todoArr.push(input.value);
 
     i.addEventListener("click", () => {
         li.remove();
     });
-    
-
 });
+
+function showErrorMessage(message) {
+    let errorMessage = document.createElement("div");
+    errorMessage.innerText = message;
+    errorMessage.style.color = "red"; 
+    input.parentNode.append(errorMessage);
+
+    setTimeout(() => {
+        errorMessage.remove();
+    }, 3000);
+}
 
 
 
